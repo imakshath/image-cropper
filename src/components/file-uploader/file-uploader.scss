@@ -1,0 +1,56 @@
+.file-upload-wrapper {
+    display: flex;
+    flex-direction: column;
+    input {
+        padding: 50px 80px;
+        outline: 2px dashed #92b0b3;
+        outline-offset: -10px;
+        border: 1px solid #d5eaec;
+    }
+
+    .item {
+        align-self: center;
+    }
+    .input-file-wrapper {
+        margin-top: 20px;
+        position: relative;
+        label {
+            position: absolute;
+            color: #ccc;
+            top: 15px;
+            left: 80px;
+            text-align: center;
+            font-style: italic;
+        }
+        .error-message {
+            color: red;
+            position: absolute;
+            bottom: 15px;
+            left: 80px;
+        }
+    }
+}
+.image-preview-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+.btn-upload {
+    padding: 40px;
+    background-color: #5948ca;
+    border-radius: 5px;
+    width: 100%;
+    position: relative;
+    border-style: none;
+    color: #ffff;
+    cursor: pointer;
+    font-size: 20px;
+}
+.button-wrapper {
+    margin: 10px 0 20px 0;
+    width: 300px;
+}
+button:disabled {
+    background-color: #cbc3e8;
+}
