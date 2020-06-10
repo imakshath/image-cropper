@@ -125,7 +125,6 @@ export default function FileUploader({ onUploadSuccess }) {
             // prepare formdata object for upload.
             const formData = new FormData();
             for (let file of convertedFiles) {
-                console.log(file);
                 formData.append('files', file);
             }
             // upload files to the server.
